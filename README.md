@@ -1,10 +1,12 @@
 # AI Abandoned Cart on WhatsApp — Frontend
 
-Shopify embedded admin app (React / Next.js) for recovering abandoned carts via WhatsApp — manual sends and automated flows with merchant WhatsApp API configs.
+Shopify embedded admin app (**Next.js / React / TypeScript**) for recovering abandoned carts via WhatsApp — manual sends and automated flows with merchant WhatsApp API configs.
 
 **Live on Shopify App Store:** [AI Abandoned Cart On Whatsapp](https://apps.shopify.com/aboundent-cart-whatsapp)
 
-> Portfolio showcase of production frontend work. Backend is a separate Laravel API. Screenshots will be added under `docs/screenshots/`.
+**Admin panel (demo):** [abandoned-cart-frontend.taskolia.com](https://abandoned-cart-frontend.taskolia.com/)
+
+> **Full-stack delivery:** I built **both** this frontend **and** the paired **Laravel** backend (auth, carts, WhatsApp configs, billing, reminders). This public repo is the frontend only — Laravel API source is not included here.
 
 ---
 
@@ -25,11 +27,10 @@ Built as a **Shopify embedded app** with App Bridge + Polaris, talking to a Lara
 
 | Area | Contribution |
 |------|----------------|
-| Frontend architecture | Next.js 14 App Router, TypeScript, embedded Shopify UX |
-| Shopify integration | App Bridge, session token bridge, Polaris UI |
-| Product UI | Dashboard, carts, WhatsApp configs, templates, packages, admin |
-| API client | Axios layer, auth/session handling, protected routes |
-| UX polish | Loading/error states, subscription guards, branding theme |
+| Frontend | Next.js 14 App Router, TypeScript, App Bridge, Polaris, Tailwind |
+| Backend (not in this repo) | **Laravel** REST API — auth, carts, WhatsApp, billing, cron/reminders |
+| Shopify | Embedded UX, session token bridge, billing / packages |
+| Product UI | Admin dashboard, carts, customers, configs, templates, settings |
 
 ---
 
@@ -37,12 +38,38 @@ Built as a **Shopify embedded app** with App Bridge + Polaris, talking to a Lara
 
 | Layer | Technologies |
 |-------|----------------|
-| Framework | **Next.js 14** (App Router), **React 18**, **TypeScript** |
+| Frontend | **Next.js 14**, **React 18**, **TypeScript** |
 | Shopify | **@shopify/app-bridge**, **@shopify/app-bridge-react**, **@shopify/polaris** |
-| Styling | **Tailwind CSS**, Polaris design system, WhatsApp-oriented branding |
+| Styling | **Tailwind CSS**, Polaris, WhatsApp-oriented branding |
 | HTTP | **Axios** |
 | Charts / UI | **Recharts**, **Lucide**, **React Quill**, **React Toastify** |
-| Backend (paired) | **Laravel** REST API (auth, carts, WhatsApp configs, billing) |
+| Backend (paired) | **Laravel** REST API |
+
+---
+
+## Screenshots
+
+### Merchant app (Shopify Admin / App Store)
+
+![Abandoned carts](docs/screenshots/01-abandoned-carts.png)
+
+![WhatsApp configs](docs/screenshots/02-whatsapp-configs.png)
+
+![Merchant dashboard](docs/screenshots/03-dashboard.png)
+
+### Admin panel (full-screen, 1920×1080)
+
+![Admin dashboard](docs/screenshots/admin-01-dashboard.png)
+
+![Packages](docs/screenshots/admin-04-packages.png)
+
+![Subscriptions](docs/screenshots/admin-05-subscriptions.png)
+
+![WhatsApp configs (admin)](docs/screenshots/admin-06-whatsapp-configs.png)
+
+![Settings](docs/screenshots/admin-07-settings.png)
+
+Additional captures in `docs/screenshots/` (`admin-02-customers`, `admin-03-abandoned-carts`) — omitted from the README body to avoid publishing live merchant/shopper contact details.
 
 ---
 
@@ -80,28 +107,6 @@ contexts/                    # Embedded path & timezone
 
 ---
 
-## Screenshots
-
-Place images here (coming soon):
-
-```
-docs/screenshots/
-├── 01-dashboard.png
-├── 02-abandoned-carts.png
-├── 03-whatsapp-config.png
-├── 04-message-templates.png
-└── 05-packages.png
-```
-
-<!-- After you add files, uncomment:
-
-![Dashboard](docs/screenshots/01-dashboard.png)
-![Abandoned carts](docs/screenshots/02-abandoned-carts.png)
-
--->
-
----
-
 ## Local setup (dev)
 
 ```bash
@@ -125,6 +130,7 @@ Requires a running Laravel API with CORS + auth configured.
 ## Notes
 
 - This repository is the **merchant-facing React/Next.js frontend** of a production Shopify app.  
+- The **Laravel backend** was also implemented by me; it is **not** published in this repo.  
 - Credentials and production `.env` files are **not** included.  
 - Built while working with WebExert; listed publicly on the [Shopify App Store](https://apps.shopify.com/aboundent-cart-whatsapp).
 
