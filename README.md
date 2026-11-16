@@ -51,25 +51,39 @@ Built as a **Shopify embedded app** with App Bridge + Polaris, talking to a Lara
 
 ### Merchant app (Shopify Admin / App Store)
 
-![Abandoned carts](docs/screenshots/01-abandoned-carts.png)
+<p align="center">
+  <img src="docs/screenshots/01-abandoned-carts.png" alt="Abandoned carts" width="900" />
+</p>
 
-![WhatsApp configs](docs/screenshots/02-whatsapp-configs.png)
+<p align="center">
+  <img src="docs/screenshots/02-whatsapp-configs.png" alt="WhatsApp configs" width="900" />
+</p>
 
-![Merchant dashboard](docs/screenshots/03-dashboard.png)
+<p align="center">
+  <img src="docs/screenshots/03-dashboard.png" alt="Merchant dashboard" width="900" />
+</p>
 
-### Admin panel (full-screen, 1920×1080)
+### Admin panel
 
-![Admin dashboard](docs/screenshots/admin-01-dashboard.png)
+<p align="center">
+  <img src="docs/screenshots/admin-01-dashboard.png" alt="Admin dashboard" width="900" />
+</p>
 
-![Packages](docs/screenshots/admin-04-packages.png)
+<p align="center">
+  <img src="docs/screenshots/admin-04-packages.png" alt="Packages" width="900" />
+</p>
 
-![Subscriptions](docs/screenshots/admin-05-subscriptions.png)
+<p align="center">
+  <img src="docs/screenshots/admin-05-subscriptions.png" alt="Subscriptions" width="900" />
+</p>
 
-![WhatsApp configs (admin)](docs/screenshots/admin-06-whatsapp-configs.png)
+<p align="center">
+  <img src="docs/screenshots/admin-06-whatsapp-configs.png" alt="WhatsApp configs admin" width="900" />
+</p>
 
-![Settings](docs/screenshots/admin-07-settings.png)
-
-Additional captures in `docs/screenshots/` (`admin-02-customers`, `admin-03-abandoned-carts`) — omitted from the README body to avoid publishing live merchant/shopper contact details.
+<p align="center">
+  <img src="docs/screenshots/admin-07-settings.png" alt="Settings" width="900" />
+</p>
 
 ---
 
