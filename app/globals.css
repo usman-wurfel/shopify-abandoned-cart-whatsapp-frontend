@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Bigger height for packages rich text editor */
+.quill-package-editor .ql-container {
+  min-height: 220px;
+}
+
+.quill-package-editor .ql-editor {
+  min-height: 200px;
+}
+
+/* Privacy Policy rich text editor */
+.quill-privacy-editor .ql-container {
+  min-height: 500px;
+}
+
+.quill-privacy-editor .ql-editor {
+  min-height: 480px;
+  font-size: 14px;
+}
+
+/* Public privacy policy content (HTML from Quill) */
+.privacy-policy-content h1 { font-size: 1.875rem; font-weight: 700; margin: 1.5rem 0 0.75rem; }
+.privacy-policy-content h2 { font-size: 1.5rem; font-weight: 600; margin: 1.25rem 0 0.5rem; }
+.privacy-policy-content h3 { font-size: 1.25rem; font-weight: 600; margin: 1rem 0 0.5rem; }
+.privacy-policy-content p { margin: 0.75rem 0; line-height: 1.6; }
+.privacy-policy-content ul, .privacy-policy-content ol { margin: 0.75rem 0; padding-left: 1.5rem; }
+.privacy-policy-content a { color: #2563eb; text-decoration: underline; }
+.privacy-policy-content a:hover { color: #1d4ed8; }
+.privacy-policy-content strong { font-weight: 600; }
+.privacy-policy-content em { font-style: italic; }
+
